@@ -5,7 +5,7 @@ Lucky Stockholm is a Python web application that helps tourists discover fun and
 ## Features
 
 - Curated list of top-rated restaurants, bars, and attractions in Stockholm
-- Detailed information about each venue, including location, cost, and description
+- Information about each venue, including location, cost, and description
 - Easy-to-use search functionality to find venues based on a category
 - Responsive design that works well on desktop and mobile devices
 
@@ -18,6 +18,8 @@ To get started with Lucky Stockholm, follow these steps:
 3. Start the Flask web application by running `python app.py` in the terminal
 4. Access the web application in your web browser at `http://localhost:5000`
 5. Browse the list of venues or use the search functionality to find venues based on keyword or category
+
+Please note that Lucky Stockholm is a personal project created for educational purposes and is not affiliated with any commercial entities or organizations. It is a fun way to explore the city of Stockholm and learn web development skills using Python and Flask. The information provided in the app may not be up-to-date or accurate, and users are advised to verify the details before making any plans or bookings. The app is provided "as is" and the developer assumes no liability for any errors, omissions, or damages arising from the use of the app.
 
 ## Contributing
 
