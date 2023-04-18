@@ -19,6 +19,8 @@ To get started with Lucky Stockholm, follow these steps:
 4. Access the web application in your web browser at `http://localhost:5000`
 5. Browse the list of venues or use the search functionality to find venues based on keyword or category
 
+## Disclaimer
+
 Please note that Lucky Stockholm is a personal project created for educational purposes and is not affiliated with any commercial entities or organizations. It is a fun way to explore the city of Stockholm and learn web development skills using Python and Flask. The information provided in the app may not be up-to-date or accurate, and users are advised to verify the details before making any plans or bookings. The app is provided "as is" and the developer assumes no liability for any errors, omissions, or damages arising from the use of the app.
 
 ## Contributing
