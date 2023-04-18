@@ -1,5 +1,5 @@
 from flask import Blueprint, render_template, request
-from activities import *
+from data.activities import *
 import random
 
 # create Blueprint instance for views
