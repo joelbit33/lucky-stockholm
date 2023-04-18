@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky Stockholm</title>
+    <!-- link to custom stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <!-- link to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="content">
+            {% block content %}
+            <!-- header section -->
+            <div class="header">
+                <h1><a href="/">Lucky Stockholm</a></h1>
+            </div>
+            <!-- info box with prompt to click "Lucky" button -->
+            <div class="info-box">Hit the Lucky Button to discover what you can do in Stockholm </div>
+            <!-- form with "Lucky" button to trigger random activity selection -->
+            <form method="post" action="/">
+                <input type="submit" name="lucky-lunch" value="Lucky Lunch">
+            </form>
+            <form method="post" action="/">
+                <input type="submit" name="lucky-dinner" value="Lucky Dinner">
+            </form>
+            <form method="post" action="/">
+                <input type="submit" name="lucky-drink" value="Lucky Drink">
+            </form>
+            {% endblock %}
+        </div>
+    </div>
+</body>
+
+</html>

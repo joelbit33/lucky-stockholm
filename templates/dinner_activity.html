@@ -1,0 +1,25 @@
+{% extends 'index.html' %} {% block content %}
+<div class="container">
+    <div class="content">
+        <!-- Display the name, location, cost and description of the activity -->
+        <div class="info-box">
+            <h2>{{ activity_name }}</h2>
+            <p>Location: {{ activity_location }}</p>
+            <p>Cost: {{ activity_cost }}</p>
+            <p>Description: {{ activity_description }}</p>
+            <p>Booking Link: {{ activity_booking }}</p>
+        </div>
+
+        <!-- Display an image of the activity -->
+        <img src="{{ activity_image }}" alt="Activity Image" width="200" height="300">
+
+        <!-- Display a form with a "Lucky" button to show another random activity and a "Go back home" button to return to the homepage -->
+        <div class="bottom-container">
+            <form method="post" action="/">
+                <input type="submit" name="lucky-dinner" value="Lucky Dinner">
+            </form>
+            <h1 class="home-link"><a href="/">Go back home</a></h1>
+        </div>
+    </div>
+</div>
+{% endblock %}
