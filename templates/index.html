@@ -24,17 +24,20 @@
                 <h1><a href="/">Lucky Stockholm</a></h1>
             </div>
             <!-- info box with prompt to click "Lucky" button -->
-            <div class="info-box">Hit the Lucky Button to discover what you can do in Stockholm </div>
-            <!-- form with "Lucky" button to trigger random activity selection -->
-            <form method="post" action="/">
-                <input type="submit" name="lucky-lunch" value="Lucky Lunch">
-            </form>
-            <form method="post" action="/">
-                <input type="submit" name="lucky-dinner" value="Lucky Dinner">
-            </form>
-            <form method="post" action="/">
-                <input type="submit" name="lucky-drink" value="Lucky Drink">
-            </form>
+            <div class="home-info-box">Hit the Lucky Button to discover what you can do in Stockholm </div>
+
+            <div class="button-section">
+                <!-- form with "Lucky" button to trigger random activity selection -->
+                <form method="post" action="/">
+                    <input type="submit" name="lucky-lunch" value="Lucky Lunch">
+                </form>
+                <form method="post" action="/">
+                    <input type="submit" name="lucky-dinner" value="Lucky Dinner">
+                </form>
+                <form method="post" action="/">
+                    <input type="submit" name="lucky-drink" value="Lucky Drink">
+                </form>
+            </div>
             {% endblock %}
         </div>
     </div>

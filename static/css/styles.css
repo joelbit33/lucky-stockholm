@@ -1,0 +1,124 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7ede2;
+    color: #333333;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    column-gap: 100px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    margin-top: -15px;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 2.7em;
+}
+
+h1 a {
+    text-decoration: none;
+    color: #333333;
+}
+
+.home-info-box {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.9em;
+}
+
+.button-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.info-box {
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.info-box h2 {
+    margin-bottom: -4px;
+}
+
+.info-box h2 a {
+    color: #333333;
+}
+
+.info-box p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    margin: 0.5em 0em;
+}
+
+.bottom-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+
+}
+
+.bottom-container h1 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+form input[type="submit"] {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 105px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.7em;
+    font-weight: 300;
+    margin: 15px;
+    border: none;
+    border-radius: 22% 4% 22%;
+    cursor: pointer;
+}
+
+form input[name="lucky-lunch"] {
+    background-color: #84a59d;
+}
+
+form input[name="lucky-dinner"] {
+    background-color: #f57a7d;
+}
+
+form input[name="lucky-drink"] {
+    background-color: #6699CC;
+}
+
+
+form input[type="submit"]:hover {
+    /* Add hover styles */
+    background-color: #f6bd60;
+    color: #444444;
+    font-size: 1.9em;
+}
+
+@media only screen and (max-width: 400px) {
+    .bottom-container {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+}
