@@ -7,7 +7,7 @@ body {
 .container {
     display: flex;
     justify-content: center;
-    column-gap: 100px;
+    column-gap: 50px;
 }
 
 .header {
@@ -50,6 +50,7 @@ h1 a {
     justify-content: center;
     align-items: center;
     text-align: center;
+
 }
 
 .info-box h2 {
@@ -78,6 +79,22 @@ h1 a {
 .bottom-container h1 {
     font-size: 1.5em;
     text-align: center;
+}
+
+.info-image-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 50px;
+    row-gap: 10px;
+    flex-wrap: wrap;
+}
+
+.info-image-box img {
+    width: 500px;
+    height: 300px;
+    border-radius: 5%;
 }
 
 form input[type="submit"] {
@@ -114,11 +131,34 @@ form input[type="submit"]:hover {
     font-size: 1.9em;
 }
 
+
+@media only screen and (max-width: 1015px) {
+    .info-box {
+        margin-top: -70px;
+        margin-bottom: -50px;
+    }
+
+}
+
 @media only screen and (max-width: 400px) {
     .bottom-container {
         position: fixed;
         left: 0;
         bottom: 0;
         right: 0;
+        margin-top: 0;
     }
+
+    .info-image-box img {
+        width: 300px;
+        height: 200px;
+        border-radius: 5%;
+    }
+
+    .info-box p {
+        font-size: 1.0em;
+        line-height: 1.5em;
+        margin: 0.5em 0em;
+    }
+
 }
