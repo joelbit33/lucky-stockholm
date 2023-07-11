@@ -21,10 +21,10 @@ def get_random_activity(activity_type):
     activity_location = activity['location']
     activity_cost = activity['cost']
     activity_description = activity['description']
-    activity_booking = activity['book_link']
+    activity_website = activity['website_link']
     activity_image = activity['image']
 
-    return activity_name, activity_location, activity_cost, activity_description, activity_image, activity_booking
+    return activity_name, activity_location, activity_cost, activity_description, activity_image, activity_website
 
 
 # define route for the home page, which displays either a random activity or the homepage depending on whether the "Lucky" button was clicked
@@ -36,33 +36,33 @@ def show_activity():
         activity_type = 'lunch'
 
         # get random lunch activity
-        activity_name, activity_location, activity_cost, activity_description, activity_image, activity_booking = get_random_activity(
+        activity_name, activity_location, activity_cost, activity_description, activity_image, activity_website = get_random_activity(
             activity_type)
 
         # display activity page with lunch info
-        return render_template('lunch_activity.html', activity_name=activity_name, activity_location=activity_location, activity_cost=activity_cost, activity_description=activity_description, activity_image=activity_image, activity_booking=activity_booking)
+        return render_template('lunch_activity.html', activity_name=activity_name, activity_location=activity_location, activity_cost=activity_cost, activity_description=activity_description, activity_image=activity_image, activity_website=activity_website)
 
     elif request.form.get('lucky-dinner') == 'Lucky Dinner':
         # set dinner activity
         activity_type = 'dinner'
 
         # get random dinner activity
-        activity_name, activity_location, activity_cost, activity_description, activity_image, activity_booking = get_random_activity(
+        activity_name, activity_location, activity_cost, activity_description, activity_image, activity_website = get_random_activity(
             activity_type)
 
         # display activity page with dinner info
-        return render_template('dinner_activity.html', activity_name=activity_name, activity_location=activity_location, activity_cost=activity_cost, activity_description=activity_description, activity_image=activity_image, activity_booking=activity_booking)
+        return render_template('dinner_activity.html', activity_name=activity_name, activity_location=activity_location, activity_cost=activity_cost, activity_description=activity_description, activity_image=activity_image, activity_website=activity_website)
 
     elif request.form.get('lucky-drink') == 'Lucky Drink':
         # set drink activity
         activity_type = 'drink'
 
         # get random drink activity
-        activity_name, activity_location, activity_cost, activity_description, activity_image, activity_booking = get_random_activity(
+        activity_name, activity_location, activity_cost, activity_description, activity_image, activity_website = get_random_activity(
             activity_type)
 
         # display activity page with drink info
-        return render_template('drink_activity.html', activity_name=activity_name, activity_location=activity_location, activity_cost=activity_cost, activity_description=activity_description, activity_image=activity_image, activity_booking=activity_booking)
+        return render_template('drink_activity.html', activity_name=activity_name, activity_location=activity_location, activity_cost=activity_cost, activity_description=activity_description, activity_image=activity_image, activity_website=activity_website)
 
     # if "Lucky" button not clicked
     # display homepage
